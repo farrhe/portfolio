@@ -1,0 +1,454 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =========== CUSTOM CSS STARTS FROM THIS POINT =========== */
+
+
+/* ====== STYLES FOR THE "MAIN PAGE" HEADER AND NAVIGATION STARTS FROM HERE ====== */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(../images/mac-3.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 130px;
+  
+}
+.nav-links{
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 4px;
+  background: #a40f0d;
+  display: block;
+  margin: auto;
+  transition: 0. 5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text-box h1{ 
+  font-size: 62px;
+}
+.text-box h3{
+  margin: 10px 0 40;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 18px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 9px #999;
+  border-radius: 15px;
+}
+.hero-btn:hover{
+  border: 2px solid #a40f0d;
+  background: #a40f0d;
+  transition: 1s;
+}
+@media(max-width: 650px){
+  .text-box h1{
+    font-size: 26px;
+  }
+  .text-box h3{
+    font-size: 20px;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+}
+/* --------- My Btn ------ */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #a40f0d;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 9px #999;
+
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/* ---------- STYLES FOR THE QUOTE SECTION STARTS FROM THIS POINT ----------- */
+.quote{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+}
+.quote h1{
+  font-size: 36px;
+  font-weight: 600;
+  color:black;
+}
+
+.quote p{
+  color: black;
+  font-size: 16px;
+  font-weight: 300px;
+  line-height: 22px;
+  padding: 10px;
+}
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.quote-col{
+  flex-basis: 31%;
+  background: #a3ddcb;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.quote-col:hover{
+  box-shadow: 0 0 25px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 650px){
+  .row{
+    flex-direction: column;
+  }
+  .quote h1{
+    font-size: 26px;
+  
+}
+}
+
+/* --------- STYLES FOR THE WORK SAMPLE AREA ARE GIVEN BELOW ----------- */
+
+.work{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.work h1{
+  font-size: 36px;
+  font-weight: 500;
+}
+.work-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.work-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.work-col p{
+  padding: 10px;
+}
+
+
+
+
+/* ---------- THIS SECTION IS FOR THE CONTACT US SECTION/IMAGE --------- */
+
+.contact{
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/Farah-portfolio-2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  text-align: center;
+  padding: 100px 0;
+}
+.contact h1{
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0%;
+}
+@media(max-width: 650px){
+  .contact h1{
+    font-size: 24px;
+  }
+}
+
+/* --------------- CODE FOR THE SITE FOOTER IS GIVEN IN THIS SECTION ------------ */
+.footer{ 
+  background-color: #474c58;
+  padding: 20px;
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+.site-footer .fa{
+  padding: 20px;
+  font-size: 26px;
+  width: 50px;
+  color: #fff;
+  text-decoration: none;
+  align-content: flex-end;
+}
+
+
+/* ============ "ABOUT US" PAGE CUSTOM CSS STARTS FROM HERE =========== */
+
+/* ------------ STYLES FOR THE HEADER --------------- */
+.sub-header{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/laptop2.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+
+}
+.about-box{
+  width: 90%;
+  color: #fff;
+  text-align: center;
+
+}
+.about-box h1{ 
+  font-size: 62px;
+}
+.about-box h3{ 
+  font-size: 25px;
+  padding-top: 20px;
+}
+.about-us{
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+.about-col{
+  flex-basis: 48%;
+  padding: 30px 2px;
+
+}
+.about-col img{
+  width: 100%;
+}
+.about-col h1{
+  padding-top: 0%;
+  font-size: 30px;
+  text-align: center;
+}
+.about-col p{
+  padding: 15px 0 25px;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+.red-btn{
+  border: 3px solid #a40f0d;
+  background: transparent;
+  color: #a40f0d;
+}
+.red-btn:hover{
+  color: #fff;
+}
+
+/* =================  "CONTACT US" PAGE CUSTOM CSS STARTS FROM HERE =============== */
+
+/* ------------ STYLES FOR THE HEADER --------------- */
+.contact-box h1{ 
+  font-size: 62px;
+}
+.contact-box h3{ 
+  font-size: 25px;
+  padding-top: 20px;
+}
+
+/* --------------  STYLES FOR THE LOCATIO MAP ARE GIVEN BELOW ------------ */
+.location{
+  width: 80%;
+  margin: auto;
+  padding: 80px 0;
+}
+
+.location iframe{
+  width: 100%;
+
+}
+ /* ------------- STYLES FOR THE ADDRESS AREA ARE GIVEN HERE ---------- */
+.contact-us{
+  width: 80%;
+  margin: auto;
+}
+.contact-col{
+  flex-basis: 48%;
+  margin-bottom: 30px;
+}
+.contact-col div{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.contact-col div .fa{
+  font-size: 28px;
+  color: #a40f0d;
+  margin: 10px;
+  margin-right: 20px;
+  
+}
+.contact-col div p{
+  padding: 0%;
+}
+.contact-col div h5{
+font-size: 20px;
+margin-bottom: 5px;
+color:#555;
+font-weight: 400;
+}
+ /*--------- STYLES FOR THE FORM STRARTS FROM THIS SECTION ----------- */
+ .contact-col input, .contact-col textarea{
+   width: 80%;
+   padding: 15px;
+   margin-bottom: 17px;
+   outline: none;
+   border: 3px solid #ccc;
+   box-sizing: border-box;
+ }
+/* --------- STYLES FOR THE PROFILE PAGE VIDEOS ARE GIVEN BELOW ----------- */
+ .work-col video{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+ }
+ .work-p{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+.work-p h1{
+  font-size: 36px;
+  font-weight: 500;
+}
+.work-col{
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+}
+.work-col img{
+  width: 100%;
+  border-radius: 10px;
+}
+.work-col p{
+  padding: 0%;
+}
