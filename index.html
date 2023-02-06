@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c7fddd4e1f.js" crossorigin="anonymous"></script>
-    <title>Farah-Portfolio-Assignment</title>
+    <title>Farah-Portfolio</title>
 </head>      
 <body>
 
@@ -23,8 +23,18 @@
                 <ul>
                    <li><a href="index.html"><i class="fa fa-fw fa-home"></i> Home </a></li>
                    <li><a href="about.html"><i class="fa fa-user-circle"></i> About </a></li>
-                   <li><a href="portfolio.html"><i class="fa fa-folder-open"></i> Portfolio </a></li>
-                   <li><a href="contact.html"><i class="fa fa-address-card-o"></i> Get in Touch </a></li>
+                   <li class="dropdown">
+                    <button class="dropbtn"><i class="fa fa-folder-open"> Portfolio </i> <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                      <a href="graphic_designs.html"> Graphic Design </a>
+                      <a href="photography.html"> Photography </a>
+                      <a href="uxd.html"> UX Design </a>
+                      <a href="videos.html"> Videos </a>
+                      <a href="webdevelopment.html"> Web Development </a>
+                    </div>
+                    <li><a href="contact.html"><i class="fa fa-address-card-o"></i> Get in Touch </a></li>
+                  </li> 
+                  </div>
                </ul>
             </div>
        </nav>
@@ -64,21 +74,35 @@
 
       <!------------ WORK SAMPLES --------->
       <section class="work">
-         <h1>My Work</h1><br>
+         <h1>Work Samples</h1><br>
           <p> My Passion with digital design keeps me motivated. I prefer to spend my time in creative work </p>
 
           <div class="row">
             <div class="work-col">
-              <img src="./images/hassan-laptop.jpg" alt="Hassan">
-              <h3><a href="portfolio.html" class="hero-btn red-btn">Photography</a></h3>
+              <img src="./images/colored-pencils.jpg" alt="Farah">
+              <h3><a href="graphic_designs.html" class="hero-btn red-btn"> Graphic Designs </a></h3>
             </div>
             <div class="work-col">
-              <img src="./images/farah-art.jpg" alt="Farah">
-              <h3><a href="portfolio.html" class="hero-btn red-btn">Graphics</a></h3>
+              <img src="./images/logo1-design.jpeg" alt="Hassan">
+              <h3><a href="uxd.html" class="hero-btn red-btn"> Logo Designs </a></h3>
             </div>
             <div class="work-col">
-              <img src="./images/Hassan-1.jpg" alt="Banner">
-              <h3><a href="portfolio.html" class="hero-btn red-btn">Photo Editting</a></h3>
+              <img src="./images/Hassan-3.jpg" alt="Banner">
+              <h3><a href="photography.html" class="hero-btn red-btn"> Photo Editting </a></h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="work-col">
+              <img src="./images/portrait-2.jpg" alt="Hassan">
+              <h3><a href="photography.html#photography" class="hero-btn red-btn"> Photography </a></h3>
+            </div>
+            <div class="work-col">
+              <img src="./images/digital-camera.jpg" alt="Camera">
+              <h3><a href="videos.html" class="hero-btn red-btn"> Videography </a></h3>
+            </div>
+            <div class="work-col">
+              <img src="./images/http-web.jpg" alt="Banner">
+              <h3><a href="webdevelopment.html" class="hero-btn red-btn"> Websites </a></h3>
             </div>
           </div>
       </section>
@@ -101,7 +125,7 @@
      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
      <a href="https://ca.linkedin.com/" class="fa fa-linkedin "></a>
      <br>
-     Copyright &copy; All rights Reserved - My Portfolio, 2021
+     Copyright &copy; All rights Reserved - My Portfolio, 2023
      </footer>   
   </div>
 </Section>
