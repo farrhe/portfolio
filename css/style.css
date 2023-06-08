@@ -143,9 +143,9 @@ nav img{
   background: #a40f0d;
   transition: 1s;
 }
-/* nav.fa{
+ nav.fa{
   display: none;
-} */
+}
 @media(max-width: 650px){
   .text-box h1{
     font-size: 26px;
