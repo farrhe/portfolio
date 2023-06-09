@@ -78,7 +78,7 @@ nav{
 /* Custom Nav code starts her */
 
 nav img{
-  width: 130px;
+  width: 130px; 
 }
 .nav-links{
   flex: 1;
